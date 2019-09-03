@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style></style>
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="/js/index.js"></script>
+  <script>
+    (() => {
+      var socket = io();
+      socket.on("selections", data => {
+        // console.log(data);
+      });
+    })();
+  </script>
+  <body>
+    <div class="component1">
+      <h1 class="header">upcoming favourites</h1>
+      <div id="horse-data"></div>
+      <div id="count-data"></div>
+    </div>
+  </body>
+</html>
